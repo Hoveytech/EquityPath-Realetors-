@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EquityPath Realtors – Rent-to-Own Platform</title>
+  <meta name="description" content="Utah's rent-to-own real estate platform powered by the XRP Ledger. Connect with agents and start your path to homeownership today." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Equity<span>Path</span></a>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="upload.html">Upload Files</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Your Path to<br /><span>Homeownership</span> Starts Here</h1>
+    <p>Utah's rent-to-own real estate platform built for buyers, sellers, and agents — powered by the XRP Ledger.</p>
+    <a href="upload.html" class="btn btn--primary btn--lg">Upload Your Files</a>
+  </header>
+
+  <!-- Features -->
+  <section class="section">
+    <div class="section__inner">
+      <div class="section__header">
+        <h2>How EquityPath Works</h2>
+        <p>Simple steps to start building equity on your terms.</p>
+      </div>
+      <div class="features">
+        <div class="feature-card">
+          <div class="feature-card__icon">🏠</div>
+          <h3>Find Your Home</h3>
+          <p>Browse rent-to-own listings across Utah curated by licensed real estate agents.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">📄</div>
+          <h3>Upload Documents</h3>
+          <p>Securely submit your property photos, identification, and financial documents in one place.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🔗</div>
+          <h3>XRP Ledger Powered</h3>
+          <p>Transparent, blockchain-backed agreements ensure your equity is tracked and protected.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">🤝</div>
+          <h3>Agent Support</h3>
+          <p>Work directly with Utah-licensed agents who specialize in rent-to-own transactions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-banner">
+    <h2>Ready to Get Started?</h2>
+    <p>Upload your property files or contact an agent today.</p>
+    <a href="upload.html" class="btn btn--primary btn--lg">Upload Files Now</a>
+  </div>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="section__inner">
+      <div class="section__header">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to our team.</p>
+      </div>
+      <!--
+        SETUP REQUIRED: Replace YOUR_FORM_ID below with your Formspree form ID.
+        1. Create a free account at https://formspree.io
+        2. Add a new form and copy the form ID (e.g. xpzgkwqb)
+        3. Replace YOUR_FORM_ID with that value
+      -->
+      <form
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        style="max-width:520px; margin:0 auto; display:flex; flex-direction:column; gap:1rem;"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+          style="padding:.75rem 1rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; font-family:inherit;"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email address"
+          required
+          style="padding:.75rem 1rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; font-family:inherit;"
+        />
+        <textarea
+          name="message"
+          rows="4"
+          placeholder="Your message"
+          required
+          style="padding:.75rem 1rem; border:1px solid var(--color-border); border-radius:var(--radius); font-size:1rem; font-family:inherit; resize:vertical;"
+        ></textarea>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 EquityPath Realtors. Built for Utah real estate agents.</p>
+  </footer>
+
+</body>
+</html>
