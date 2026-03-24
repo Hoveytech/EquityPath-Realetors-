@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Files – EquityPath Realtors</title>
+  <meta name="description" content="Upload property photos, documents, and identification files securely to EquityPath Realtors." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="index.html" class="nav__logo">Equity<span>Path</span></a>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="upload.html" class="active">Upload Files</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Upload Page Content -->
+  <main class="upload-page">
+    <h1>Upload Your Files</h1>
+    <p class="subtitle">
+      Submit property photos, identification, and documents securely.
+      Accepted formats: <strong>JPG, PNG, WEBP, GIF, PDF, DOC, DOCX</strong> · Max <strong>10 MB</strong> per file.
+    </p>
+
+    <!-- Drop Zone -->
+    <div id="drop-zone" class="drop-zone" role="button" tabindex="0" aria-label="File upload area. Click or drag files here.">
+      <div class="drop-zone__icon">☁️</div>
+      <h2>Drag &amp; drop files here</h2>
+      <p>or click to browse from your device</p>
+      <button class="btn btn--outline" type="button" onclick="document.getElementById('file-input').click()">
+        Browse Files
+      </button>
+      <p class="drop-zone__hint">Supported: JPG · PNG · WEBP · GIF · PDF · DOC · DOCX &nbsp;|&nbsp; Max 10 MB each</p>
+    </div>
+
+    <input
+      type="file"
+      id="file-input"
+      multiple
+      accept=".jpg,.jpeg,.png,.webp,.gif,.pdf,.doc,.docx"
+      aria-label="File input"
+    />
+
+    <!-- File List -->
+    <div id="file-list-wrap" style="display:none;">
+      <div class="file-list__header">
+        <h3>Selected Files</h3>
+      </div>
+      <div id="file-list" class="file-list"></div>
+    </div>
+
+    <!-- Actions -->
+    <div class="upload-actions">
+      <button id="upload-btn" class="btn btn--primary btn--lg" type="button">Upload Files</button>
+      <button id="clear-btn" class="btn btn--outline" type="button">Clear All</button>
+    </div>
+
+    <!-- Alerts -->
+    <div id="alert-success" class="alert alert--success" role="status" aria-live="polite"></div>
+    <div id="alert-error"   class="alert alert--error"   role="alert"  aria-live="assertive"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 EquityPath Realtors. &nbsp;|&nbsp; <a href="index.html">Back to Home</a></p>
+  </footer>
+
+  <script src="js/upload.js"></script>
+</body>
+</html>
